@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'Figtree';
+  src: url('../assets/fonts/static/Figtree-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('../assets/fonts/static/Figtree-ExtraBold.ttf');
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+   font-family: 'Figtree', sans-serif;   
+  background-color: hsl(47, 88%, 63%);  
+  color: hsl(0, 0%, 42%);
+}
+
+time{
+  display: block;
+  font-weight: 500;
+  padding: 5px 0px;
+  font-size: 0.9rem;
+  color: hsl(0, 0%, 7%)
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  width: 90%;
+  max-width: 400px;
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow:
+  4px 4px 0px rgba(0, 0, 0, 0.9),
+  10px 10px 0px rgba(0, 0, 0, 0.9);
+}
+
+.card__image{
+  padding: 20px 25px 0px 25px;
+}
+.card__image img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+.card__content{
+  padding: 20px 25px 20px 25px;
+}
+
+.card__title{
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: hsl(0, 0%, 7%)
+}
+.card__title:hover{
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+.card__category{
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: hsl(0, 0%, 7%);
+  background-color: hsl(47, 88%, 63%);
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+.card__author{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.card__author-name{
+  font-size: 1rem;
+  font-weight: 800;
+  color: hsl(0, 0%, 7%);
+  margin-left: 10px;
+}
+
+.card__author-image{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card__description{
+  font-size: 1rem;
+  color: hsl(0, 0%, 42%);
+  margin-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1.5;
+}
+
+.attribution {
+  display: block;
+  font-size: 0.75rem;
+  text-align: center;
+  margin-top: 20px;
+  color: hsl(0, 0%, 42%);
+}
